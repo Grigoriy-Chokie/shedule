@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 40px 10px;
+    width: 600px;
+}
+
+.day {
+    list-style: none;
+    width: 100%;
+    padding: 1px 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0.8827731776304272) 0%, rgba(118,45,253,0.8519608527004552) 100%);    
+}
+
+.subject {
+    padding: 5px 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 0.75fr;
+    grid-template-rows: 1fr;
+    column-gap: 5px;
+    text-align: center;
+}
+
+.time,
+.name,
+.lecturer,
+.cabinet {
+    align-self: stretch;
+    padding: 20px 10px;
+    background: rgb(34,193,195);
+    background: linear-gradient(180deg, rgba(34,193,195,0.8827731776304272) 0%, rgba(118,45,253,0.8519608527004552) 100%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
